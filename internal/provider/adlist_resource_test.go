@@ -288,4 +288,3 @@ func TestAdlistResource_ImportState_InvalidID(t *testing.T) {
 		t.Error("Expected diagnostic error for non-integer import ID, got none")
 	}
 }
-

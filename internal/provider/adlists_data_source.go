@@ -4,9 +4,9 @@ import (
 	"context"
 	"strconv"
 
-	"github.com/hashicorp/terraform-plugin-framework/diag"
 	"github.com/hashicorp/terraform-plugin-framework/datasource"
 	"github.com/hashicorp/terraform-plugin-framework/datasource/schema"
+	"github.com/hashicorp/terraform-plugin-framework/diag"
 	"github.com/hashicorp/terraform-plugin-framework/types"
 )
 
@@ -21,8 +21,8 @@ type AdlistsDataSource struct {
 }
 
 type AdlistsDataSourceModel struct {
-	ID      types.String              `tfsdk:"id"`
-	Adlists []AdlistDataSourceModel   `tfsdk:"adlists"`
+	ID      types.String            `tfsdk:"id"`
+	Adlists []AdlistDataSourceModel `tfsdk:"adlists"`
 }
 
 type AdlistDataSourceModel struct {
